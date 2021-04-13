@@ -1,3 +1,10 @@
 * Python package configuration
 
 These things really belong in a cookiecutter template (such as [[https://github.com/MolSSI/cookiecutter-cms/][cookiecutter-cms]]), but I'd rather just keep them together separately rather than maintain a template.
+
+The main goals are that:
+- [[https://pycqa.github.io/isort/][isort]] should first be used to handle imports.
+- [[https://black.readthedocs.io/en/stable/index.html][black]] should then be used to clean everything up.
+- The remaining tools should not complain about things that black and isort handle automatically (specifically line length):
+  - [[https://flake8.pycqa.org/en/latest/][flake8]]
+  - [[https://pylint.org/][pylint]]
