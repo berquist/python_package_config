@@ -1,0 +1,3 @@
+* Python package configuration
+
+These things really belong in a cookiecutter template (such as [[https://github.com/MolSSI/cookiecutter-cms/][cookiecutter-cms]]), but I'd rather just keep them together separately rather than maintain a template.
