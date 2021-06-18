@@ -34,3 +34,15 @@ repos:
     rev: "v0.902"
     hooks:
       - id: mypy
+  - repo: https://github.com/snakemake/snakefmt
+    rev: "0.4.1"
+    hooks:
+      - id: snakefmt
+  - repo: https://github.com/adrienverge/yamllint
+    rev: "v1.26.1"
+    hooks:
+      - id: yamllint
+  - repo: https://github.com/ansible-community/ansible-lint
+    rev: "v5.1.0a1"
+    hooks:
+      - id: ansible-lint
