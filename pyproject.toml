@@ -9,6 +9,23 @@ profile = "black"
 sections = ["FUTURE", "STDLIB", "ATTRS", "FIRSTPARTY", "THIRDPARTY", "LOCALFOLDER"]
 known_attrs = ["attr"]
 
+[tool.mypy]
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+
+scripts_are_modules = true
+warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+module = [
+    "psi4",
+    "pyscf",
+    "pytest",
+    "scipy",
+]
+ignore_missing_imports = true
+
 [tool.towncrier]
     package="REPONAME"
     filename="CHANGELOG.md"
