@@ -38,10 +38,6 @@ repos:
           - attrs
           - types-pyyaml
         args: []
-  - repo: https://github.com/snakemake/snakefmt
-    rev: "v0.6.0"
-    hooks:
-      - id: snakefmt
   - repo: https://github.com/adrienverge/yamllint
     rev: "v1.26.3"
     hooks:
