@@ -17,7 +17,7 @@ repos:
       - id: fix-byte-order-marker
       - id: mixed-line-ending
         # TODO switch to lf
-        args: [--fix, no]
+        args: [--fix, "no"]
       # - id: no-commit-to-branch
       #   args: [--branch, main, --branch, master, --branch, devel]
       - id: trailing-whitespace
