@@ -22,7 +22,7 @@ repos:
       #   args: [--branch, main, --branch, master, --branch, devel]
       - id: trailing-whitespace
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.0.272
+    rev: v0.0.285
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
@@ -31,7 +31,7 @@ repos:
     hooks:
       - id: isort
   - repo: https://github.com/psf/black
-    rev: "23.3.0"
+    rev: "23.7.0"
     hooks:
       - id: black
   # - repo: https://github.com/PyCQA/flake8
@@ -43,7 +43,7 @@ repos:
   #   hooks:
   #     - id: pylint
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: "v1.3.0"
+    rev: "v1.5.1"
     hooks:
       - id: mypy
         additional_dependencies:
@@ -55,10 +55,10 @@ repos:
     hooks:
       - id: yamllint
   - repo: https://github.com/ansible-community/ansible-lint
-    rev: "v6.17.0"
+    rev: "v6.18.0"
     hooks:
       - id: ansible-lint
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: "0.23.1"
+    rev: "0.24.1"
     hooks:
       - id: check-github-workflows
