@@ -23,6 +23,10 @@ repos:
       # - id: no-commit-to-branch
       #   args: [--branch, main, --branch, master, --branch, devel]
       - id: trailing-whitespace
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+    rev: "2.7.3"
+    hooks:
+      - id: editorconfig-checker
   - repo: https://github.com/PyCQA/isort
     rev: "5.13.2"
     hooks:
