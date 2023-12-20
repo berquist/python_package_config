@@ -48,7 +48,11 @@ repos:
     rev: "v6.22.1"
     hooks:
       - id: ansible-lint
-  - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: "0.27.3"
+  - repo: https://github.com/Mateusz-Grzelinski/actionlint-py
+    rev: "v1.6.26.11"
     hooks:
-      - id: check-github-workflows
+      - id: actionlint
+  - repo: https://gitlab.com/devopshq/gitlab-ci-linter
+    rev: "v1.0.6"
+    hooks:
+      - id: gitlab-ci-linter

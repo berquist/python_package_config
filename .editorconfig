@@ -8,3 +8,7 @@ insert_final_newline = true
 [*.{py,toml}]
 indent_style = space
 indent_size = 4
+
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
