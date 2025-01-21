@@ -24,7 +24,7 @@ repos:
       #   args: [--branch, main, --branch, master, --branch, devel]
       - id: trailing-whitespace
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-    rev: "3.0.3"
+    rev: "3.1.2"
     hooks:
       - id: editorconfig-checker
   - repo: https://github.com/PyCQA/isort
@@ -32,7 +32,7 @@ repos:
     hooks:
       - id: isort
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.8.6
+    rev: v0.9.2
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
@@ -49,11 +49,11 @@ repos:
     hooks:
       - id: yamllint
   - repo: https://github.com/ansible-community/ansible-lint
-    rev: "v24.12.2"
+    rev: "v25.1.0"
     hooks:
       - id: ansible-lint
   - repo: https://github.com/Mateusz-Grzelinski/actionlint-py
-    rev: "v1.7.6.22"
+    rev: "v1.7.7.23"
     hooks:
       - id: actionlint
   - repo: https://gitlab.com/devopshq/gitlab-ci-linter
